@@ -1,0 +1,122 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Block Metrics Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            th {
+                background-color: #3498db;
+                color: white;
+                position: sticky;
+                top: 0;
+            }
+            .main-header {
+                background-color: #2980b9;
+            }
+            .sub-header {
+                background-color: #f39c12;
+            }
+            .clean {
+                background-color: #c8e6c9;
+                color: #006100;
+            }
+            .not-clean {
+                background-color: #ffcdd2;
+                color: #be3144;
+            }
+            .not-applicable {
+                background-color: #ffacac;
+                color: #be3144;
+            }
+            .file-not-found {
+                background-color: #ffacac;
+                color: #be3144;
+            }
+            .light-orange {
+                background-color: #ffe0b2;
+            }
+            .light-red {
+                background-color: #ffcdd2;
+            }
+            .light-green {
+                background-color: #c8e6c9;
+            }
+            .sticky-header {
+                position: sticky;
+                top: 0;
+            }
+            .container {
+                max-height: 80vh;
+                overflow-y: auto;
+                margin-bottom: 20px;
+            }
+            .last-updated {
+                text-align: right;
+                font-style: italic;
+                color: #7f8c8d;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Block Metrics Report</h1>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr class="sticky-header">
+                        <th class="main-header" rowspan="2">Compiler</th>
+                        <th class="main-header" rowspan="2">Block Name</th>
+                        <th class="main-header" rowspan="2">Block Owner</th>
+                        <th class="main-header" colspan="3">Dashboard</th>
+                        <th class="main-header" rowspan="2">HOLD</th>
+                        <th class="main-header" rowspan="2">FMAX</th>
+                        <th class="main-header" rowspan="2">DRV</th>
+                        <th class="main-header" rowspan="2">TCQ</th>
+                        <th class="main-header" rowspan="2">MPW</th>
+                        <th class="main-header" colspan="4">PHYSICAL VERIFICATION</th>
+                        <th class="main-header" colspan="2">IR DROP</th>
+                        <th class="main-header" rowspan="2">Formality</th>
+                    </tr>
+                    <tr class="sticky-header">
+                        <th class="sub-header">PARA ERRORS</th>
+                        <th class="sub-header">NOT ANNOTATED</th>
+                        <th class="sub-header">MPW VIOLATION</th>
+                        <th class="sub-header">DRC</th>
+                        <th class="sub-header">LVS</th>
+                        <th class="sub-header">ERC</th>
+                        <th class="sub-header">ANT</th>
+                        <th class="sub-header">VDD</th>
+                        <th class="sub-header">VSS</th>
+                    </tr>
+                </thead>
+                <tbody>
+    <tr><td>HSPRAM</td><td>i36_i50</td><td>John Doe</td><td class='not-clean'>NOT CLEAN</td><td class='clean'>CLEAN</td><td class='not-clean'>NOT CLEAN</td><td class=''>clk_grp_bist_i36 func.min.ffgnp.0.25v_-40c.cbest_ccbest : WNS: -1.23; TNS: -0.778; FEP: 220 | clk_grp_bist_i50 func.min.ffgnp.0.125v_-40c.cbest_ccbest : WNS: -0.843; TNS: -0.177; FEP: 680 | clk_grp_CDM func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | clk_grp_CLKA func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | clkgrpslow func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | removal func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120.</td><td class=''>i36: func.min.ffgnp.0.125v_-40c.cbest_ccbest (SMS: 0.12%); Hold_margin: NA | i50: TCC.</td><td class='clean'>TRAN: func.min.ffgnp.0.25v_-40c.cbest_ccbest - WNS:424.0; BEP:0.6; FEP: 10.0 | CAP: CLEAN</td><td class='clean'>i36: CLEAN | i50: CLEAN.</td><td class=''>func.min.ffgnp.0.25v_-40c.cbest_ccbest - WNS: -1.23; FEP: 140</td><td class=''>DRC File Not Found</td><td class=''>LVS File Not Found</td><td class=''>ERC File Not Found</td><td class=''>ANT File Not Found</td><td class=''>Vol*.rpt File Not Found</td><td class=''>Vol*.rpt File Not Found</td><td class=''>Log File Not Found</td></tr><tr><td>Generic</td><td>CDM_top</td><td>Jane Smith</td><td class='not-clean'>NOT CLEAN</td><td class='clean'>CLEAN</td><td class='not-clean'>NOT CLEAN</td><td class=''>clk_grp_bist_i36 func.min.ffgnp.0.25v_-40c.cbest_ccbest : WNS: -1.23; TNS: -0.778; FEP: 220 | clk_grp_bist_i50 func.min.ffgnp.0.125v_-40c.cbest_ccbest : WNS: -0.843; TNS: -0.177; FEP: 680 | clk_grp_CDM func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | clk_grp_CLKA func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | clkgrpslow func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | removal func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120.</td><td class='not-applicable'>FMAX Not Applicable</td><td class='clean'>TRAN: func.min.ffgnp.0.25v_-40c.cbest_ccbest - WNS:424.0; BEP:0.6; FEP: 10.0 | CAP: CLEAN</td><td class='not-applicable'>TCQ Not Applicable</td><td class=''>func.min.ffgnp.0.25v_-40c.cbest_ccbest - WNS: -1.23; FEP: 140</td><td class=''>DRC File Not Found</td><td class=''>LVS File Not Found</td><td class=''>ERC File Not Found</td><td class=''>ANT File Not Found</td><td class=''>Vol*.rpt File Not Found</td><td class=''>Vol*.rpt File Not Found</td><td class=''>Log File Not Found</td></tr><tr><td>HS1PRF</td><td>i36_i50_i51</td><td>Alice Johnson</td><td class='not-clean'>NOT CLEAN</td><td class='not-clean'>NOT CLEAN</td><td class='not-clean'>NOT CLEAN</td><td class=''>clk_grp_bist_i50 func.min.ffgnp.0.25v_-40c.cbest_ccbest : WNS: -1.23; TNS: -0.778; FEP: 220 | clk_grp_bist_i36 func.min.ffgnp.0.125v_-40c.cbest_ccbest : WNS: -0.843; TNS: -0.177; FEP: 680 | clk_grp_CDM func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120 | clk_grp_bist_i51 func.min.ffgnp.0.125v_-40c.cbest_ccbest : WNS: -0.843; TNS: -0.177; FEP: 680 | clkgrpslow func.min.ffgnp.0.25v_-40c.cbest_ccbest : WNS: -1.23; TNS: -0.778; FEP: 220 | removal func.min.ffgnp.0.815v_-40c.cbest_ccbest : WNS: -0.273; TNS: -0.822; FEP: 120.</td><td class=''>i36: func.min.ffgnp.0.815v_-40c.cbest_ccbest (SMS: 0.22%); Hold_margin: 22, func.min.ffgnp.0.225v_-40c.cbest_ccbest (Memory: 0.1%); Hold_margin: 22 | i50: TCC | i51: func.min.ffgnp.0.625v_-40c.cbest_ccbest (Memory: 0.11%); Hold_margin: NA.</td><td class='clean'>TRAN: CLEAN | CAP: CLEAN</td><td class=''>Empty Sheet</td><td class='clean'>CLEAN</td><td class=''>DRC File Not Found</td><td class=''>LVS File Not Found</td><td class=''>ERC File Not Found</td><td class=''>ANT File Not Found</td><td class=''>Vol*.rpt File Not Found</td><td class=''>Vol*.rpt File Not Found</td><td class=''>Log File Not Found</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="last-updated">Last updated: 2025-05-16 18:54:41</div>
+    </body>
+    </html>
+    
