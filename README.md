@@ -1,9 +1,4 @@
-# Block Summary Processing Script - Refactored Structure
 
-## Overview
-This is a refactored version of the Block Summary Processing Script, organized into logical modules for better maintainability and code reusability.
-
-## File Structure
 
 ### Core Modules
 
@@ -74,14 +69,7 @@ BLOCK_INFO = [
 ]
 ```
 
-## Benefits of Refactored Structure
 
-1. **Modularity**: Each module has a single responsibility
-2. **Maintainability**: Easier to locate and fix bugs
-3. **Reusability**: Functions can be imported and reused
-4. **Testability**: Individual modules can be tested independently
-5. **Scalability**: Easy to add new features or checks
-6. **Readability**: Clear separation of concerns
 
 ## Module Dependencies
 
@@ -104,9 +92,7 @@ main.py
 - xlsxwriter
 - openpyxl
 
-## Original File
-The original monolithic script is preserved as:
-`script_with_grn_effect_copy_11_wo_blk_dimensions.py`
+
 
 ## Author
 Sai Kumar Malluru
