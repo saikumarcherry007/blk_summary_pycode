@@ -39,7 +39,7 @@ Author           : {AUTHOR}
 Script Version   : {SCRIPT_VERSION}
 Environment      : {env_info}
 Outputs Dir      : {ALL_BLOCK_CSV_FILES_DIR} (DEBUG PURPOSE)
-Purpose          : Process Excel files for block metrics and generate summary report
+Purpose          : Process Excel files for block metrics and PNR checks finally generates summary / detailed  report
 {'=' * 100}
     
     [ Processing Blocks ] ▶ ▷ ▶
